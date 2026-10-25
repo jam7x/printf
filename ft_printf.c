@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_printf.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: bpaineau <bpaineau@student.42angouleme.fr  +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/10/25 15:57:52 by bpaineau          #+#    #+#             */
+/*   Updated: 2026/10/25 15:58:52 by bpaineau         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ft_printf.h"
 
 static int	ft_dispatch(char c, va_list *ap)
@@ -21,10 +33,10 @@ static int	ft_dispatch(char c, va_list *ap)
 
 int	ft_printf(const char *fmt, ...)
 {
-	va_list	ap;
-	int				 count;
-	int				 ret;
-	int				 i;
+	va_list		ap;
+	int			count;
+	int			ret;
+	int			i;
 
 	va_start(ap, fmt);
 	count = 0;

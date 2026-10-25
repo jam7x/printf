@@ -1,9 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_print_hex.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: bpaineau <bpaineau@student.42angouleme.fr  +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/10/25 16:00:02 by bpaineau          #+#    #+#             */
+/*   Updated: 2026/10/25 16:00:22 by bpaineau         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ft_printf.h"
 
 int	ft_putnbr_base(unsigned long n, const char *base)
 {
 	unsigned long	len;
-	int											 count;
+	int				count;
 
 	len = 0;
 	while (base[len])
